@@ -6,7 +6,7 @@ const Navbar = () => {
   const [hamburger, setHamburger] = useState(false);
 
   const HaburgerHandler = () => {
-    setHamburger((prev) => !prev);
+    setHamburger((prev) => !prev); //hamburger section 
   };
   return (
     <div>
@@ -15,19 +15,22 @@ const Navbar = () => {
           <img src="/logo.svg" alt="" className="navbar-logo" />
         </div>
         <div className="navbar-menu-sec">
-          <ul className="navbar-menu">
-            <li className="navbar-menu-item">
+          <div className="navbar-menu">
+            <div className="navbar-menu-item">
               <a href="/">Top Picks</a>
-            </li>
-            <li className="navbar-menu-item">
+            </div>
+            <div className="navbar-menu-item">
               <a href="/category-list">Category</a>
-            </li>
+            </div>
 
-            <li className="navbar-menu-item">
+            <div className="navbar-menu-item">
               <a href="/user-list">Users</a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
+
+        {/* //Hamburger Section */}
+
         <div className="navbar-hamb-sec">
           <img
             src="/hamburger.png"
@@ -36,6 +39,7 @@ const Navbar = () => {
             onClick={HaburgerHandler}
           />
         </div>
+
         {hamburger == true ? (
           <div className="navbar-hamb-menu-sec">
             <ul className="navbar-menu">

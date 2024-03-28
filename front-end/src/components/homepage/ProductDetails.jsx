@@ -25,22 +25,22 @@ const ProductDetails = () => {
     <div>
       <div className="productdetails-main-body">
           <div className="productdetails-heading-sec">PRODUCT DETAILS</div>
-        <div className="productdetails-product-body">
-          <div className="productdetails-product-img-sec">
+        <div className="productdetails-card-body">
+          <div className="productdetails-card-img-sec">
             <img
               src={singleproduct.images}
               alt=""
-              className="productdetails-product-img"
+              className="productdetails-card-img"
             />
           </div>
 
-          <div className="productdetails-product-data">
+          <div className="productdetails-card-data">
             {singleproduct.title}
           </div>
-          <div className="productdetails-product-data">
+          <div className="productdetails-card-data">
             {singleproduct.description}
           </div>
-          <div className="productdetails-product-data">
+          <div className="productdetails-card-data">
             {singleproduct.price}$
           </div>
 
