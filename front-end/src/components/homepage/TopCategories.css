@@ -1,0 +1,83 @@
+.topcategories-main-body {
+  min-height: 100vh;
+  width: 100%;
+  padding: 80px 0;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topcategories-sub-body {
+  min-height: 80vh;
+  width: 90%;
+  /* background-color: cyan; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.topcategories-heading-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.8rem;
+  height: 10vh;
+  width: 100%;
+  color: rgb(84, 84, 84);
+}
+
+.topcategories-card-body {
+  height: 100px;
+  width: 350px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px 5px rgba(103, 103, 103, 0.129);
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.topcategories-card-body:hover {
+  transform: scale(1.04);
+}
+
+.topcategories-card-img {
+  height: 80%;
+  width: auto;
+  border-radius: 15px;
+}
+.topcategories-card-data {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  text-transform: capitalize;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 60%;
+  /* background-color: rgb(77, 255, 0); */
+}
+.topcategories-card-btn {
+  height: 40px;
+  width: 80%;
+  color: white;
+  border: 0;
+  font-weight: 700;
+  border-radius: 10px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: rgb(6, 110, 255);
+}
+.cart-logo {
+  height: 20px;
+  width: auto;
+  filter: invert(1);
+}

@@ -1,0 +1,117 @@
+.navbar-main-body {
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 1px 15px rgba(149, 149, 149, 0.507);
+}
+.navbar-logo-sec {
+  height: 100%;
+  width: 30%;
+  /* background-color: rgb(0, 255, 128); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-logo {
+  height: 80%;
+  width: auto;
+}
+.navbar-menu-sec {
+  height: 100%;
+  width: 50%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-menu {
+  height: 100%;
+  width: 60%;
+  /* background-color: rgb(0, 255, 13); */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.navbar-menu-item {
+  list-style: none;
+  height: 90%;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* background-color: red; */
+  transition: all 0.2s ease-in-out;
+}
+.navbar-menu-item:hover {
+  background-color: #fe7826;
+}
+
+.navbar-menu-item a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+.navbar-hamb-sec {
+  /* background-color: rgb(0, 76, 255); */
+  display: none;
+}
+
+.navbar-hamb-menu-sec {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .navbar-menu-sec {
+    display: none;
+  }
+  .navbar-hamb-sec {
+    height: 100%;
+    width: 20%;
+    /* background-color: rgb(0, 76, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger-icon {
+    height: 50%;
+    width: auto;
+  }
+  .navbar-hamb-menu-sec {
+    display: flex;
+    top: 10vh;
+    position: absolute;
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(217, 217, 217);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .navbar-menu {
+    height: 100%;
+    width: 85%;
+    /* background-color: rgb(0, 255, 13); */
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .navbar-menu-item {
+    list-style: none;
+    height: 80%;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* background-color: red; */
+  }
+}
