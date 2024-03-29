@@ -37,7 +37,7 @@
 }
 .navbar-menu-item {
   list-style: none;
-  height: 90%;
+  height: 70%;
   width: 80px;
   display: flex;
   justify-content: center;
@@ -49,8 +49,8 @@
 }
 .navbar-menu-item:hover {
   background-color: #fe7826;
+  height: 90%;
 }
-
 .navbar-menu-item a {
   text-decoration: none;
   font-size: 0.7rem;
